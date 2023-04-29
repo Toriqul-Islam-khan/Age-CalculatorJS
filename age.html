@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+</head>
+
+<body>
+    <h1 id="time"></h1>
+    <script>
+        var age = parseInt(prompt("Enter your age= "), 10), show;
+        switch (true) {
+            case  age< 18:
+                show = " child";
+                break;
+            case  age>= 18 &&  age<= 40:
+                show = " young";
+                break;
+            case age > 40:
+                show = " adult";
+                break;
+            // default:
+            //     show = "This is deafult";
+
+        }
+        document.getElementById("time").innerHTML = "you are" + show;
+    </script>
+</body>
+
+</html>
